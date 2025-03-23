@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aprendiendo con mi página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ff0000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            /* Organiza el contenido en columna */
+        }
+
+        #mensaje {
+            color: rgb(255, 255, 255);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: darkblue;
+            /* Cambio de color al pasar el ratón */
+        }
+
+        #contador {
+            font-size: 24px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .imagen {
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="mensaje">Aprendiendo</h1>
+
+    <button onclick="incrementarContador()">Haz clic para aumentar el contador</button>
+    <div id="contador">Contador: 0</div>
+
+    <!-- Imagen con enlace -->
+    <a href="https://es.pornhub.com/" target="_blank">
+        <img src="bebe.png" alt="Haz clic aquí" class="imagen">
+    </a>
+
+    <script>
+        let contador = 0;
+
+        function incrementarContador() {
+            contador++;
+            document.getElementById("contador").textContent = "Contador: " + contador;
+        }
+    </script>
+
+</body>
+
+</html>
